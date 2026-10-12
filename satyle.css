@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+.weather-card {
+    width: 100%;
+    max-width: 390px;
+    padding: 30px 24px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    color: #253858;
+    font-size: 27px;
+}
+
+.subtitle {
+    margin: 10px 0 22px;
+    color: #687386;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d0d7e2;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #5277e8;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 9px;
+    background: #5277e8;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #385bd0;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#message {
+    margin-top: 18px;
+    color: #596579;
+    font-size: 14px;
+}
+
+.weather-result {
+    margin-top: 18px;
+}
+
+.weather-result[hidden] {
+    display: none;
+}
+
+#city-name {
+    color: #253858;
+    font-size: 23px;
+}
+
+.weather-icon {
+    margin-top: 12px;
+    font-size: 65px;
+}
+
+.description {
+    color: #596579;
+    text-transform: capitalize;
+}
+
+.temperature {
+    margin: 8px 0 20px;
+    color: #253858;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.detail {
+    padding: 14px 8px;
+    border-radius: 12px;
+    background: #eef3ff;
+}
+
+.detail span {
+    font-size: 23px;
+}
+
+.detail p {
+    margin: 7px 0;
+    color: #687386;
+    font-size: 13px;
+}
+
+.detail strong {
+    color: #253858;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 24px;
+    color: #7a8494;
+    font-size: 12px;
+}
+
+@media (max-width: 360px) {
+    .weather-card {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    button {
+        padding: 12px 10px;
+    }
+}
